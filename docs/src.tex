@@ -1,0 +1,97 @@
+\documentclass[a4paper, 14pt]{extarticle}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{setspace,amsmath}
+\usepackage[left=20mm, top=15mm, right=15mm, bottom=15mm, nohead, footskip=10mm]{geometry} % Настройки полей документа
+
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+
+\begin{document} % Начало документа
+
+% Начало титульного листа
+\begin{center}
+    \normalsize{\textbf{МИНИСТЕРСТВО ОБРАЗОВАНИЯ РЕСПУБЛИКИ БЕЛАРУСЬ}}\\
+    \hfill \break
+    \normalsize{\textbf{БЕЛОРУССКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ}}\\
+    \hfill \break
+    \small{\textbf{ФАКУЛЬТЕТ ПРИКЛАДНОЙ МАТЕМАТИКИ И ИНФОРМАТИКИ}}\\
+    \hfill \break
+    \large{Кафедра математического моделирования и анализа данных}\\
+    \vspace{40mm}
+    \normalsize{Курсовая работа}\\
+    \hfill \break
+    \normalsize{Криптография на основе функций хэширования:\\ подписи без состояния}\\
+    \hfill \break
+\end{center}
+
+\begin{flushright}
+    \vspace{20mm}
+    Болтач Антон Юрьевич\\
+    Студент 3 курса 9 группы\\
+    Научный руководитель\\
+    С. В. Агиевич\\
+\end{flushright}
+
+\vfill
+\begin{center}
+    Минск, 2019 г.
+\end{center}
+\thispagestyle{empty} % Выключаем отображение номера для этой страницы
+    
+% Конец титульного листа
+
+\newpage
+
+% Содержание
+\tableofcontents
+\newpage
+
+% Введение
+% Концепции Hash-based crypto
+\section{Введение}
+\newpage
+
+% Одноразовые подписи
+\section{Одноразовые подписи(OTS)}
+\subsection{Одноразовая подпись Винтерница(WOTS)}
+\subsection{Дополненная подпись Винтерница(WOTS+)}
+\subsubsection{Обоснование стойкости(WOTS+)}
+\newpage
+
+% Деревля Меркля
+\section{Деревля Меркля(MSS)}
+\newpage
+
+% Многоразовые подписи
+\section{Многоразовые подписи(MTS)}
+\subsection{HORS}
+\subsection{PORS}
+\newpage
+
+% Подписи без состояния
+\section{Подписи без состояния}
+\subsection{SPHINCS}
+\subsection{Gravity-SPHINCS}
+\subsection{SPHINCS+}
+
+% Сравнение Stateful && Stateless
+\section{Stateful vs Stateless}
+\newpage
+
+% Заключение
+\section{Заключение}
+\newpage
+
+% Литература
+\section{Литература}
+\newpage
+
+
+\end{document}
+% Конец документа

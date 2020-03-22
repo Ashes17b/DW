@@ -1,0 +1,3 @@
+[submodule "src/bitshares-core"]
+	path = src/bitshares-core
+	url = git@github.com:Ashes17b/bitshares-core.git

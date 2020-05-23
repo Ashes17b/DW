@@ -1,4 +1,4 @@
-# Diploma work
+Diploma work
 ==============
 
 Bachelor's diploma work at FPMI, BSU
